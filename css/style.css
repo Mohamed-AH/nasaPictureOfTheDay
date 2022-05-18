@@ -1,0 +1,65 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+body {
+  margin: auto;
+  padding: auto;
+  justify-content: center;
+
+  border: 3px solid grey;
+  color: whitesmoke;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-weight: 200;
+}
+
+#flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#flex-container > .flex-item {
+  flex: auto;
+}
+
+#flex-container > .raw-item {
+  /* width: 20rem; */
+}
+
+section {
+  background-color: white;
+  color: black;
+  margin: 10px 10px;
+}
+
+main {
+  height: 600px;
+  width: 800px;
+  background-color: black;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+@media screen and (max-width: 600px) {
+  section {
+    width: 100%;
+  }
+  main {
+    height: 300px;
+    width: 200px;
+    width: 100%;
+  }
+}
